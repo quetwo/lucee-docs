@@ -48,14 +48,14 @@ In Docker there are different ways to install it.
 Copy it into the `deploy folder` like this via a Dockerfile:
 
 ```Dockerfile
-ADD https://ext.lucee.org/websocket-extension-3.0.0.14-RC.lex /lucee/lucee-server/deploy/
+ADD https://ext.lucee.org/websocket-extension-3.0.0.17-RC.lex /lucee/lucee-server/deploy/
 ```
 
 Using Environment Variables like this:
 
 ```yml
 environment:
-  - LUCEE_EXTENSIONS=3F9DFF32-B555-449D-B0EB5DB723044045;version=3.0.0.14-RC
+  - LUCEE_EXTENSIONS=3F9DFF32-B555-449D-B0EB5DB723044045;version=3.0.0.17-RC
 ```
 
 Or simply define it in the .CFConfig.json file (Lucee 6+)
@@ -65,7 +65,7 @@ Or simply define it in the .CFConfig.json file (Lucee 6+)
   "extensions": [
     {
       "name": "WebSocket",
-      "path": "/your/path/extensions/websocket.extension-3.0.0.14-RC.lex",
+      "path": "/your/path/extensions/websocket.extension-3.0.0.17-RC.lex",
       "id": "3F9DFF32-B555-449D-B0EB5DB723044045"
     }
   ]
